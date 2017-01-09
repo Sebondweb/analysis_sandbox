@@ -1,0 +1,643 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+/* ==========================================================================
+   COPIED FROM BOOTSTRAP 3.0.0 DOCS.CSS
+   ========================================================================== */
+
+/*
+ * Side navigation
+ *
+ * Scrollspy and affixed enhanced navigation to highlight sections and secondary
+ * sections of docs content.
+ */
+
+/* By default it's not affixed in mobile views, so undo that */
+.sidebar.affix {
+    position: static;
+}
+
+.sidebar.affix-top {
+    position: absolute;
+    top: 180px;
+    left: 0px; 
+}
+      
+.sidebar.affix-bottom {        
+    position: absolute;
+}
+
+/* First level of nav */
+.sidenav {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top:    10px;
+  padding-bottom: 10px;
+  /*text-shadow: 0 1px 0 #aaa;*/
+  border-right: solid 1px rgba(0,0,0,0.25);
+}
+
+/* All levels of nav */
+.sidebar .nav > li > a {
+  display: block;
+  color: rgba(0,0,0,0.65);
+  padding: 5px 20px;
+}
+.sidebar .nav > li > a:hover,
+.sidebar .nav > li > a:focus {
+  text-decoration: none;
+  background-color: rgba(0,0,0,0.10);
+  border-right: solid 1px rgba(0,0,0,0.85);
+}
+.sidebar .nav > .active > a,
+.sidebar .nav > .active:hover > a,
+.sidebar .nav > .active:focus > a {
+  font-weight: bold;
+  color: rgba(0,0,0,1);
+  background-color: transparent;
+  border-right: 5px solid rgba(0,0,0,0.65);
+}
+
+/* Nav: second level (shown on .active) */
+.sidebar .nav .nav {
+  display: none; /* Hide by default, but at >768px, show it */
+  margin-bottom: 8px;
+}
+.sidebar .nav .nav > li > a {
+  padding-top:    3px;
+  padding-bottom: 3px;
+  padding-left: 30px;
+  font-size: 90%;
+}
+.twitter-share-button {
+  padding-left: 20px;
+}
+
+.thumb img {
+  width: 200px;
+  margin: 5px;
+}
+
+/* Show and affix the side nav when space allows it */
+@media screen and (min-width: 480px) {
+  .sidebar .nav > .active > ul {
+    display: block;
+  }
+  .sidebar.affix {
+    position: fixed; /* Undo the static from mobile first approach */
+    top: 80px;
+  }
+  .sidebar.affix-bottom {
+    position: absolute; /* Undo the static from mobile first approach */
+  }
+  .sidebar.affix-bottom .bs-sidenav,
+  .sidebar.affix .bs-sidenav {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+
+
+
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+   .overlay {
+       pointer-events: none;
+       position: fixed;
+       height: 100%;
+       width: 100%;
+       left: 0;
+       top: 0;
+   }
+
+   .vignette {
+       background-image: -webkit-radial-gradient(50% 50%, ellipse, rgba(255,255,255,0) 60%, rgba(120,110,95,0.65) 100%);
+       background-image: radial-gradient(50% 50%, ellipse, rgba(255,255,255,0) 60%, rgba(120,110,95,0.65) 100%);
+   }
+
+   .noise {
+       background-image: url("../img/noise.png");
+       opacity: 0.075;
+   }
+   
+
+
+/* custom stuff */
+   a {
+       font-weight: 400;
+   }	
+
+   a:link, a:visited {
+   	   color: #2A94DB;
+   	   text-decoration: none;
+   }
+
+   a:hover, a:active {
+       color: #094C72;
+       text-decoration: underline;
+   }
+
+   a {
+   -o-transition: color .5s ease-out;
+   -ms-transition: color .5s ease-out;
+   -moz-transition: color .5s ease-out;
+   -webkit-transition: color .5s ease-out;
+   transition: color .5s ease-out;
+   }
+   
+   a > img {
+      -o-transition: opacity .5s ease-out;
+      -ms-transition: opacity .5s ease-out;
+      -moz-transition: opacity .5s ease-out;
+      -webkit-transition: opacity .5s ease-out;
+      transition: opacity .5s ease-out;
+      }
+   
+   a > img {
+       opacity: 0.65;
+   }
+   
+   a:hover > img, a:active > img {
+        opacity: 1.0;
+    }
+   
+
+body {
+    font-family: 'Crete Round', serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #444;
+    background-color: #F4F1ED;
+    /*background-image: url('/bart/site/img/hexellence.png');*/
+    background-attachment:fixed;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255,255,255,0.35);
+    padding: 3px;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+}
+
+#header > * {
+    display: inline-block;
+}
+
+
+h1, h2, h3 {
+    font-family: 'Crete Round', serif !important;
+    font-weight: 700;
+    color: #444;
+}
+
+h2 {
+    font-size: 24px !important;
+}
+
+h3 {
+    font-size: 18px !important;
+}
+
+p {
+    font-family: 'PT Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+#sidebar {
+    width: 210px;
+}
+
+#title > a {
+    text-decoration: none;
+}
+
+#title > a:link, #title > a:visited {
+    color: #dfdfdf;
+    text-shadow: 0px 2px 1px rgba(0,0,0,0.15);
+}
+
+#title > a:active, #title > a:hover  {
+    color: #fff;
+    text-shadow: 0px 2px 2px rgba(0,0,0,0.45);
+}
+
+#content {
+    padding: 10px;
+    font-family: 'Crete Round', serif;
+    line-height: 150%;
+}
+
+
+.thumb {
+    margin: 10px;
+    background-color: #fff;
+    display: inline-block;
+    z-index: 100;
+    width: 210px;
+    border-radius: 2px;
+}
+
+div.thumb > img {
+    
+}
+
+.thumb-title {
+    position: absolute;
+    max-width: 210px;
+    padding: 3px 5px 3px 5px;
+    z-index: 500;
+    background-color: #fff;
+}
+
+.info-box {
+    background-color:;
+}
+
+iframe {
+  overflow: hidden;
+}
+#content p {
+    margin-bottom: 26px;
+}
+
+.section {
+    border-top: solid 1px rgba(0,0,0,0.25);
+    margin: 10px 10px 125px 10px;
+}
+
+.section-divider {
+    min-height: 25px;
+    width: 100%;
+    background-color: #eee;
+}
+
+
+
+
+#title {
+    display: inline-block;
+    font-family: 'Crete Round', serif;
+    margin: 8px;
+}
+
+
+
+#intro {
+    height: 180px;
+    background-image: url('../img/Walnut_Creek_BART_830x340.jpg');
+    background-repeat: no-repeat;
+    background-size: 850px;
+    background-position: center;
+    border-radius: 3px;
+    margin-top: 30px;
+}
+
+#intro-text {
+    position: relative;
+    margin: 0 auto 0 auto;
+    top: 32px;
+    padding: 10px;
+    font-style: italic;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 4px;
+    color: #fff;
+    text-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.4);
+}
+
+#intro-link {
+  float: right;
+  text-align: right;
+  margin-right: 5px;
+}
+
+#intro-link a, #intro-link a:visited {
+  color: #444;
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#intro-link a:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+
+
+.source-popover {
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.35);
+    width: 100px;
+}
+
+.source-popover:hover {
+    background-color: #ccf;
+}
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+    
+    #content {
+        width: 100%;
+    }
+    
+    #intro-text {
+        width: 250px;
+        font-size: 20px;
+    }
+    
+    #sidebar {
+        display: none;
+    }
+} 
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 481px) and (max-width: 801px) {
+
+    #content {
+        width: 100%;
+    }
+    
+    #intro-text {
+        width: 250px;
+        font-size: 24px;
+    }
+    
+    #sidebar {
+        display: none;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 802px) and (max-width: 1023px) {
+
+    #content {
+        position: absolute;
+        left: 220px;
+        width: 650px;
+    }
+    
+    #intro-text {
+        width: 380px;
+        font-size: 36px;
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 1024px) and (max-width: 1399px) {
+ 
+    #content {
+        position: absolute;
+        left: 220px;
+        width: 850px;
+    }
+    
+    #intro-text {
+        width: 500px;
+        font-size: 48px;
+    }
+}
+
+/* Large desktop */
+@media (min-width: 1400px) {
+
+    
+    #content {
+        position: absolute;
+        left: 220px;
+        width: 900px;
+    }
+    
+    #intro-text {
+        width: 500px;
+        font-size: 48px;
+    }
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+.fb {
+  margin-left: 20px;
+}
